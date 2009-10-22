@@ -4,7 +4,7 @@ var amiestreet = amiestreet || {
       var ret = {};
       jQuery.each(args.callee.toString().split(') {')[0].replace('function '+args.callee.name+'(', '').split(','), function(i){
           if(jQuery.trim(this)!='callback'){
-              ret[jQuery.trim(this)] = encodeURIComponent(args[i]);
+              ret[jQuery.trim(this)] = args[i];
           }
       });
       return ret;

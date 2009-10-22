@@ -299,116 +299,116 @@ a list of all albums currently available on Amie Street, similar artists,
 most popular songs, etc.
 </p><div class="definition"><h4 class="function" id="Fn_ArtistApi_get">get</h4>
 <p class="doc">Simple metadata for a single artist.
-</p><pre><code><a href="amie_api.html#Struct_ArtistVO">ArtistVO</a></code> get(<code><a href="amie_api.html#Typedef_artistIdentifierRef">artistIdentifierRef</a></code> artist)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_ArtistApi_multiGet">multiGet</h4>
+</p> <code><a href="#Struct_ArtistVO">ArtistVO</a></code> get(<code><a href="#Typedef_artistIdentifierRef">artistIdentifierRef</a></code> artist)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_ArtistApi_multiGet">multiGet</h4>
 <p class="doc">Simple meta data for a list of artists
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_ArtistVO">ArtistVO</a></code>&gt;</code> multiGet(<code><a href="amie_api.html#Typedef_artistIdentifierRefList">artistIdentifierRefList</a></code> artistIdString)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_ArtistApi_info">info</h4>
+</p> <code>list&lt;<code><a href="#Struct_ArtistVO">ArtistVO</a></code>&gt;</code> multiGet(<code><a href="#Typedef_artistIdentifierRefList">artistIdentifierRefList</a></code> artistIdString)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_ArtistApi_info">info</h4>
 <p class="doc">Get all of the profile information available for an artist.
-</p><pre><code><a href="amie_api.html#Struct_ArtistProfileVO">ArtistProfileVO</a></code> info(<code><a href="amie_api.html#Typedef_artistIdentifierRef">artistIdentifierRef</a></code> artist)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_ArtistApi_songs">songs</h4>
+</p> <code><a href="#Struct_ArtistProfileVO">ArtistProfileVO</a></code> info(<code><a href="#Typedef_artistIdentifierRef">artistIdentifierRef</a></code> artist)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_ArtistApi_songs">songs</h4>
 <p class="doc">List all songs from an artist sorted with standard album position,
 track number ordering.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_SongVO">SongVO</a></code>&gt;</code> songs(<code><a href="amie_api.html#Typedef_artistIdentifierRef">artistIdentifierRef</a></code> artist)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_ArtistApi_topSongs">topSongs</h4>
+</p> <code>list&lt;<code><a href="#Struct_SongVO">SongVO</a></code>&gt;</code> songs(<code><a href="#Typedef_artistIdentifierRef">artistIdentifierRef</a></code> artist)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_ArtistApi_topSongs">topSongs</h4>
 <p class="doc">Songs from an artist sorted by popularity.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_SongVO">SongVO</a></code>&gt;</code> topSongs(<code><a href="amie_api.html#Typedef_artistIdentifierRef">artistIdentifierRef</a></code> artist)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_ArtistApi_albums">albums</h4>
+</p> <code>list&lt;<code><a href="#Struct_SongVO">SongVO</a></code>&gt;</code> topSongs(<code><a href="#Typedef_artistIdentifierRef">artistIdentifierRef</a></code> artist)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_ArtistApi_albums">albums</h4>
 <p class="doc">All albums from this artist sorted by album position.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_AlbumVO">AlbumVO</a></code>&gt;</code> albums(<code><a href="amie_api.html#Typedef_artistIdentifierRef">artistIdentifierRef</a></code> artist)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_ArtistApi_topAlbums">topAlbums</h4>
+</p> <code>list&lt;<code><a href="#Struct_AlbumVO">AlbumVO</a></code>&gt;</code> albums(<code><a href="#Typedef_artistIdentifierRef">artistIdentifierRef</a></code> artist)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_ArtistApi_topAlbums">topAlbums</h4>
 <p class="doc">All albums by this artist sorted by popularity.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_AlbumVO">AlbumVO</a></code>&gt;</code> topAlbums(<code><a href="amie_api.html#Typedef_artistIdentifierRef">artistIdentifierRef</a></code> artist)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_ArtistApi_similarArtists">similarArtists</h4>
+</p> <code>list&lt;<code><a href="#Struct_AlbumVO">AlbumVO</a></code>&gt;</code> topAlbums(<code><a href="#Typedef_artistIdentifierRef">artistIdentifierRef</a></code> artist)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_ArtistApi_similarArtists">similarArtists</h4>
 <p class="doc">Proprietary similar artists based on tags, staff curation, listening trends,
 purchasing trends etc.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_ArtistVO">ArtistVO</a></code>&gt;</code> similarArtists(<code><a href="amie_api.html#Typedef_artistIdentifierRef">artistIdentifierRef</a></code> artist)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_ArtistApi_labelSimilarArtists">labelSimilarArtists</h4>
+</p> <code>list&lt;<code><a href="#Struct_ArtistVO">ArtistVO</a></code>&gt;</code> similarArtists(<code><a href="#Typedef_artistIdentifierRef">artistIdentifierRef</a></code> artist)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_ArtistApi_labelSimilarArtists">labelSimilarArtists</h4>
 <p class="doc">Similar artists on the same label.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_ArtistVO">ArtistVO</a></code>&gt;</code> labelSimilarArtists(<code><a href="amie_api.html#Typedef_artistIdentifierRef">artistIdentifierRef</a></code> artist)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_ArtistApi_genreSimilarArtists">genreSimilarArtists</h4>
+</p> <code>list&lt;<code><a href="#Struct_ArtistVO">ArtistVO</a></code>&gt;</code> labelSimilarArtists(<code><a href="#Typedef_artistIdentifierRef">artistIdentifierRef</a></code> artist)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_ArtistApi_genreSimilarArtists">genreSimilarArtists</h4>
 <p class="doc">Similar artists with matching genres.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_ArtistVO">ArtistVO</a></code>&gt;</code> genreSimilarArtists(<code><a href="amie_api.html#Typedef_artistIdentifierRef">artistIdentifierRef</a></code> artist)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_ArtistApi_recs">recs</h4>
+</p> <code>list&lt;<code><a href="#Struct_ArtistVO">ArtistVO</a></code>&gt;</code> genreSimilarArtists(<code><a href="#Typedef_artistIdentifierRef">artistIdentifierRef</a></code> artist)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_ArtistApi_recs">recs</h4>
 <p class="doc">All recs for songs which this artist performs on.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_RecVO">RecVO</a></code>&gt;</code> recs(<code><a href="amie_api.html#Typedef_artistIdentifierRef">artistIdentifierRef</a></code> artist)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_ArtistApi_bio">bio</h4>
+</p> <code>list&lt;<code><a href="#Struct_RecVO">RecVO</a></code>&gt;</code> recs(<code><a href="#Typedef_artistIdentifierRef">artistIdentifierRef</a></code> artist)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_ArtistApi_bio">bio</h4>
 <p class="doc">If the artist has supplied us with a bio, it will return the full bio,
 not the short version and not the AMG supplied versions.
-</p><pre><code>string</code> bio(<code><a href="amie_api.html#Typedef_artistIdentifierRef">artistIdentifierRef</a></code> artist)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><h3 class="service" id="Svc_AlbumApi">AlbumApi</h3>
+</p> <code>string</code> bio(<code><a href="#Typedef_artistIdentifierRef">artistIdentifierRef</a></code> artist)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><h3 class="service" id="Svc_AlbumApi">AlbumApi</h3>
 <p class="doc">The album API allows you to get extended information for an album, such as
 its track list, its editor's note if it has one, RECs, etc.
 </p><div class="definition"><h4 class="function" id="Fn_AlbumApi_get">get</h4>
 <p class="doc">Simple metadata for a single album.
-</p><pre><code><a href="amie_api.html#Struct_AlbumVO">AlbumVO</a></code> get(<code><a href="amie_api.html#Typedef_albumIdentifierRef">albumIdentifierRef</a></code> album)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_AlbumApi_multiGet">multiGet</h4>
+</p> <code><a href="#Struct_AlbumVO">AlbumVO</a></code> get(<code><a href="#Typedef_albumIdentifierRef">albumIdentifierRef</a></code> album)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_AlbumApi_multiGet">multiGet</h4>
 <p class="doc">Simple meta data for a list of artists
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_AlbumVO">AlbumVO</a></code>&gt;</code> multiGet(<code><a href="amie_api.html#Typedef_albumIdentifierRefList">albumIdentifierRefList</a></code> albumIdString)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_AlbumApi_similar">similar</h4>
+</p> <code>list&lt;<code><a href="#Struct_AlbumVO">AlbumVO</a></code>&gt;</code> multiGet(<code><a href="#Typedef_albumIdentifierRefList">albumIdentifierRefList</a></code> albumIdString)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_AlbumApi_similar">similar</h4>
 <p class="doc">Proprietary similar albums based on tags, listening habits, purchase history etc.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_AlbumVO">AlbumVO</a></code>&gt;</code> similar(<code><a href="amie_api.html#Typedef_albumIdentifierRef">albumIdentifierRef</a></code> album)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_AlbumApi_songs">songs</h4>
+</p> <code>list&lt;<code><a href="#Struct_AlbumVO">AlbumVO</a></code>&gt;</code> similar(<code><a href="#Typedef_albumIdentifierRef">albumIdentifierRef</a></code> album)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_AlbumApi_songs">songs</h4>
 <p class="doc">All songs on an album sorted by track number.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_SongVO">SongVO</a></code>&gt;</code> songs(<code><a href="amie_api.html#Typedef_albumIdentifierRef">albumIdentifierRef</a></code> album)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_AlbumApi_info">info</h4>
+</p> <code>list&lt;<code><a href="#Struct_SongVO">SongVO</a></code>&gt;</code> songs(<code><a href="#Typedef_albumIdentifierRef">albumIdentifierRef</a></code> album)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_AlbumApi_info">info</h4>
 <p class="doc">Extended meta data for an album.
-</p><pre><code><a href="amie_api.html#Struct_AlbumProfileVO">AlbumProfileVO</a></code> info(<code><a href="amie_api.html#Typedef_albumIdentifierRef">albumIdentifierRef</a></code> album)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_AlbumApi_topSongs">topSongs</h4>
+</p> <code><a href="#Struct_AlbumProfileVO">AlbumProfileVO</a></code> info(<code><a href="#Typedef_albumIdentifierRef">albumIdentifierRef</a></code> album)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_AlbumApi_topSongs">topSongs</h4>
 <p class="doc">Gets a list of all songs on the album sorted by popularity.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_SongVO">SongVO</a></code>&gt;</code> topSongs(<code><a href="amie_api.html#Typedef_albumIdentifierRef">albumIdentifierRef</a></code> album,
+</p> <code>list&lt;<code><a href="#Struct_SongVO">SongVO</a></code>&gt;</code> topSongs(<code><a href="#Typedef_albumIdentifierRef">albumIdentifierRef</a></code> album,
                       <code>i32</code> limit)
-</pre></div><div class="definition"><h4 class="function" id="Fn_AlbumApi_recs">recs</h4>
+ </div><div class="definition"><h4 class="function" id="Fn_AlbumApi_recs">recs</h4>
 <p class="doc">All recs for songs which appear on this album.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_RecVO">RecVO</a></code>&gt;</code> recs(<code><a href="amie_api.html#Typedef_albumIdentifierRef">albumIdentifierRef</a></code> album)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_AlbumApi_topRecsWithReview">topRecsWithReview</h4>
+</p> <code>list&lt;<code><a href="#Struct_RecVO">RecVO</a></code>&gt;</code> recs(<code><a href="#Typedef_albumIdentifierRef">albumIdentifierRef</a></code> album)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_AlbumApi_topRecsWithReview">topRecsWithReview</h4>
 <p class="doc">Best RECs (as scored by RecRater) sorted by score desc.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_RecVO">RecVO</a></code>&gt;</code> topRecsWithReview(<code><a href="amie_api.html#Typedef_albumIdentifierRef">albumIdentifierRef</a></code> album)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_AlbumApi_editorNote">editorNote</h4>
+</p> <code>list&lt;<code><a href="#Struct_RecVO">RecVO</a></code>&gt;</code> topRecsWithReview(<code><a href="#Typedef_albumIdentifierRef">albumIdentifierRef</a></code> album)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_AlbumApi_editorNote">editorNote</h4>
 <p class="doc">The Editor Note associated with this album.
-</p><pre><code><a href="amie_api.html#Struct_EditorNote">EditorNote</a></code> editorNote(<code><a href="amie_api.html#Typedef_albumIdentifierRef">albumIdentifierRef</a></code> album)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_AlbumApi_getUsersWhoPurchasedWithPrices">getUsersWhoPurchasedWithPrices</h4>
+</p> <code><a href="#Struct_EditorNote">EditorNote</a></code> editorNote(<code><a href="#Typedef_albumIdentifierRef">albumIdentifierRef</a></code> album)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_AlbumApi_getUsersWhoPurchasedWithPrices">getUsersWhoPurchasedWithPrices</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_UserWithPriceVO">UserWithPriceVO</a></code>&gt;</code> getUsersWhoPurchasedWithPrices(<code><a href="amie_api.html#Typedef_albumIdentifierRef">albumIdentifierRef</a></code> album,
+ <code>list&lt;<code><a href="#Struct_UserWithPriceVO">UserWithPriceVO</a></code>&gt;</code> getUsersWhoPurchasedWithPrices(<code><a href="#Typedef_albumIdentifierRef">albumIdentifierRef</a></code> album,
                                                      <code>i32</code> offset,
                                                      <code>i32</code> limit)
-</pre></div><h3 class="service" id="Svc_SongApi">SongApi</h3>
+ </div><h3 class="service" id="Svc_SongApi">SongApi</h3>
 <p class="doc">Get extended information on a song.
 @todo (lucas) Add recs
 @todo (lucas) build out?
 </p><div class="definition"><h4 class="function" id="Fn_SongApi_getSongById">getSongById</h4>
 <p class="error">No doc</p>
-<pre><code><a href="amie_api.html#Struct_SongVO">SongVO</a></code> getSongById(<code>string</code> id)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_SongApi_recordPostPurchasePlay">recordPostPurchasePlay</h4>
+ <code><a href="#Struct_SongVO">SongVO</a></code> getSongById(<code>string</code> id)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_SongApi_recordPostPurchasePlay">recordPostPurchasePlay</h4>
 <p class="error">No doc</p>
-<pre><code>bool</code> recordPostPurchasePlay(<code>string</code> id)
-</pre></div><div class="definition"><h4 class="function" id="Fn_SongApi_getUsersWhoPurchasedWithPrices">getUsersWhoPurchasedWithPrices</h4>
+ <code>bool</code> recordPostPurchasePlay(<code>string</code> id)
+ </div><div class="definition"><h4 class="function" id="Fn_SongApi_getUsersWhoPurchasedWithPrices">getUsersWhoPurchasedWithPrices</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_UserWithPriceVO">UserWithPriceVO</a></code>&gt;</code> getUsersWhoPurchasedWithPrices(<code><a href="amie_api.html#Typedef_songIdentifierRef">songIdentifierRef</a></code> song,
+ <code>list&lt;<code><a href="#Struct_UserWithPriceVO">UserWithPriceVO</a></code>&gt;</code> getUsersWhoPurchasedWithPrices(<code><a href="#Typedef_songIdentifierRef">songIdentifierRef</a></code> song,
                                                      <code>i32</code> offset,
                                                      <code>i32</code> limit)
-</pre></div><h3 class="service" id="Svc_LibraryApi">LibraryApi</h3>
+ </div><h3 class="service" id="Svc_LibraryApi">LibraryApi</h3>
 <p class="doc">Whenever someone purchases something on Amie Street, it is added to their library.
 The library api allows you to access various information about the library, i.e.
 how many songs are there, what artists has this user purchased from, etc.
@@ -416,451 +416,451 @@ These methods require authentication in some cases as users can specify their
 libraries to be private.
 </p><div class="definition"><h4 class="function" id="Fn_LibraryApi_numSongs">numSongs</h4>
 <p class="doc">Get the number of songs in the user's library.
-</p><pre><code>i32</code> numSongs(<code><a href="amie_api.html#Typedef_userIdentifierRef">userIdentifierRef</a></code> user)
-</pre></div><div class="definition"><h4 class="function" id="Fn_LibraryApi_songs">songs</h4>
+</p> <code>i32</code> numSongs(<code><a href="#Typedef_userIdentifierRef">userIdentifierRef</a></code> user)
+ </div><div class="definition"><h4 class="function" id="Fn_LibraryApi_songs">songs</h4>
 <p class="doc">Get a paged list of all songs in a user's library that have not been banned.
-</p><pre><code><a href="amie_api.html#Struct_PagedSongListVO">PagedSongListVO</a></code> songs(<code><a href="amie_api.html#Typedef_userIdentifierRef">userIdentifierRef</a></code> user,
+</p> <code><a href="#Struct_PagedSongListVO">PagedSongListVO</a></code> songs(<code><a href="#Typedef_userIdentifierRef">userIdentifierRef</a></code> user,
                       <code>i32</code> page,
                       <code>i32</code> limit)
-</pre></div><div class="definition"><h4 class="function" id="Fn_LibraryApi_artists">artists</h4>
+ </div><div class="definition"><h4 class="function" id="Fn_LibraryApi_artists">artists</h4>
 <p class="doc">Get a list of all artists in a user's library.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_ArtistVO">ArtistVO</a></code>&gt;</code> artists(<code><a href="amie_api.html#Typedef_userIdentifierRef">userIdentifierRef</a></code> user)
-</pre></div><div class="definition"><h4 class="function" id="Fn_LibraryApi_albums">albums</h4>
+</p> <code>list&lt;<code><a href="#Struct_ArtistVO">ArtistVO</a></code>&gt;</code> artists(<code><a href="#Typedef_userIdentifierRef">userIdentifierRef</a></code> user)
+ </div><div class="definition"><h4 class="function" id="Fn_LibraryApi_albums">albums</h4>
 <p class="doc">Get a list of all albums in a user's library.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_AlbumVO">AlbumVO</a></code>&gt;</code> albums(<code><a href="amie_api.html#Typedef_userIdentifierRef">userIdentifierRef</a></code> user)
-</pre></div><div class="definition"><h4 class="function" id="Fn_LibraryApi_genres">genres</h4>
+</p> <code>list&lt;<code><a href="#Struct_AlbumVO">AlbumVO</a></code>&gt;</code> albums(<code><a href="#Typedef_userIdentifierRef">userIdentifierRef</a></code> user)
+ </div><div class="definition"><h4 class="function" id="Fn_LibraryApi_genres">genres</h4>
 <p class="doc">Get a list of all genres which appear in a user's library.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_GenreVO">GenreVO</a></code>&gt;</code> genres(<code><a href="amie_api.html#Typedef_userIdentifierRef">userIdentifierRef</a></code> user)
-</pre></div><div class="definition"><h4 class="function" id="Fn_LibraryApi_banSong">banSong</h4>
+</p> <code>list&lt;<code><a href="#Struct_GenreVO">GenreVO</a></code>&gt;</code> genres(<code><a href="#Typedef_userIdentifierRef">userIdentifierRef</a></code> user)
+ </div><div class="definition"><h4 class="function" id="Fn_LibraryApi_banSong">banSong</h4>
 <p class="doc">Ban a single song from the library.
-</p><pre><code>bool</code> banSong(<code><a href="amie_api.html#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
+</p> <code>bool</code> banSong(<code><a href="#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
              <code>string</code> songId)
-</pre></div><div class="definition"><h4 class="function" id="Fn_LibraryApi_banSongList">banSongList</h4>
+ </div><div class="definition"><h4 class="function" id="Fn_LibraryApi_banSongList">banSongList</h4>
 <p class="doc">Ban a list of songs from the library.
-</p><pre><code>bool</code> banSongList(<code><a href="amie_api.html#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
+</p> <code>bool</code> banSongList(<code><a href="#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
                  <code>string</code> songIdList)
-</pre></div><div class="definition"><h4 class="function" id="Fn_LibraryApi_unbanSong">unbanSong</h4>
+ </div><div class="definition"><h4 class="function" id="Fn_LibraryApi_unbanSong">unbanSong</h4>
 <p class="doc">Unban a single song which makes a once banned song show up in the Library.songs list again.
-</p><pre><code>bool</code> unbanSong(<code><a href="amie_api.html#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
+</p> <code>bool</code> unbanSong(<code><a href="#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
                <code>string</code> songId)
-</pre></div><div class="definition"><h4 class="function" id="Fn_LibraryApi_unbanSongList">unbanSongList</h4>
+ </div><div class="definition"><h4 class="function" id="Fn_LibraryApi_unbanSongList">unbanSongList</h4>
 <p class="doc">Unban a list of songs which makes a once banned songs show up in the Library.songs list again.
-</p><pre><code>bool</code> unbanSongList(<code><a href="amie_api.html#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
+</p> <code>bool</code> unbanSongList(<code><a href="#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
                    <code>string</code> songIdList)
-</pre></div><div class="definition"><h4 class="function" id="Fn_LibraryApi_bannedSongs">bannedSongs</h4>
+ </div><div class="definition"><h4 class="function" id="Fn_LibraryApi_bannedSongs">bannedSongs</h4>
 <p class="doc">Get a list of all songs banned by the user.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_SongVO">SongVO</a></code>&gt;</code> bannedSongs(<code><a href="amie_api.html#Typedef_userIdentifierRef">userIdentifierRef</a></code> user)
-</pre></div><div class="definition"><h4 class="function" id="Fn_LibraryApi_refreshLibrary">refreshLibrary</h4>
+</p> <code>list&lt;<code><a href="#Struct_SongVO">SongVO</a></code>&gt;</code> bannedSongs(<code><a href="#Typedef_userIdentifierRef">userIdentifierRef</a></code> user)
+ </div><div class="definition"><h4 class="function" id="Fn_LibraryApi_refreshLibrary">refreshLibrary</h4>
 <p class="doc">Used by players as a periodic updater to see if the user has purchased
 any new songs since the app's initial song list was fetched.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_SongVO">SongVO</a></code>&gt;</code> refreshLibrary(<code><a href="amie_api.html#Typedef_userIdentifierRef">userIdentifierRef</a></code> user,
+</p> <code>list&lt;<code><a href="#Struct_SongVO">SongVO</a></code>&gt;</code> refreshLibrary(<code><a href="#Typedef_userIdentifierRef">userIdentifierRef</a></code> user,
                             <code>string</code> songIds)
-</pre></div><h3 class="service" id="Svc_PlayerApi">PlayerApi</h3>
+ </div><h3 class="service" id="Svc_PlayerApi">PlayerApi</h3>
 <p class="doc">Actually a misnomer...  This should be playbackApi.
 </p><div class="definition"><h4 class="function" id="Fn_PlayerApi_scrobble">scrobble</h4>
 <p class="error">No doc</p>
-<pre><code><a href="amie_api.html#Struct_ScrobbleResponseVO">ScrobbleResponseVO</a></code> scrobble(<code><a href="amie_api.html#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
+ <code><a href="#Struct_ScrobbleResponseVO">ScrobbleResponseVO</a></code> scrobble(<code><a href="#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
                             <code>string</code> songId,
                             <code>string</code> status,
                             <code>string</code> instance)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><h3 class="service" id="Svc_AuthApi">AuthApi</h3>
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><h3 class="service" id="Svc_AuthApi">AuthApi</h3>
 <p class="doc">Need to Authenticate?  Found the right place
 </p><div class="definition"><h4 class="function" id="Fn_AuthApi_login">login</h4>
 <p class="doc">Login to get a fingerprint which can then be used in the normal auth required
 procedures.
-</p><pre><code><a href="amie_api.html#Struct_AuthUserVO">AuthUserVO</a></code> login(<code>string</code> username,
+</p> <code><a href="#Struct_AuthUserVO">AuthUserVO</a></code> login(<code>string</code> username,
                  <code>string</code> password)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_AuthApi_logout">logout</h4>
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_AuthApi_logout">logout</h4>
 <p class="doc">Destroys the provided fingerprint.
-</p><pre><code>bool</code> logout(<code><a href="amie_api.html#Typedef_userFingerprint">userFingerprint</a></code> fingerprint)
-</pre></div><div class="definition"><h4 class="function" id="Fn_AuthApi_getFingerprint">getFingerprint</h4>
+</p> <code>bool</code> logout(<code><a href="#Typedef_userFingerprint">userFingerprint</a></code> fingerprint)
+ </div><div class="definition"><h4 class="function" id="Fn_AuthApi_getFingerprint">getFingerprint</h4>
 <p class="doc">Get the fingerprint of the current actor.  NOTE: this is only usable in the
 client side api clients and will not work correctly in the server side clients.
-</p><pre><code>string</code> getFingerprint()
-</pre></div><div class="definition"><h4 class="function" id="Fn_AuthApi_isFingerprintValid">isFingerprintValid</h4>
+</p> <code>string</code> getFingerprint()
+ </div><div class="definition"><h4 class="function" id="Fn_AuthApi_isFingerprintValid">isFingerprintValid</h4>
 <p class="doc">Check if a fingerprint captured in the application is still valid or whether
 authentication needs to happen again.
-</p><pre><code>bool</code> isFingerprintValid(<code>string</code> fingerprint)
-</pre></div><div class="definition"><h4 class="function" id="Fn_AuthApi_getActor">getActor</h4>
+</p> <code>bool</code> isFingerprintValid(<code>string</code> fingerprint)
+ </div><div class="definition"><h4 class="function" id="Fn_AuthApi_getActor">getActor</h4>
 <p class="doc">Get the currently logged in user.
-</p><pre><code><a href="amie_api.html#Struct_AuthUserVO">AuthUserVO</a></code> getActor(<code><a href="amie_api.html#Typedef_userFingerprint">userFingerprint</a></code> fingerprint)
-</pre></div><div class="definition"><h4 class="function" id="Fn_AuthApi_requestOfflineToken">requestOfflineToken</h4>
+</p> <code><a href="#Struct_AuthUserVO">AuthUserVO</a></code> getActor(<code><a href="#Typedef_userFingerprint">userFingerprint</a></code> fingerprint)
+ </div><div class="definition"><h4 class="function" id="Fn_AuthApi_requestOfflineToken">requestOfflineToken</h4>
 <p class="doc">If you're writing an app.  Do not store passwords.  At all.
 Allows you (as the application) to request a permanent token to access this
 user's account for most actions provided they grant you access with
 their username and password.
-</p><pre><code>string</code> requestOfflineToken(<code>string</code> username,
+</p> <code>string</code> requestOfflineToken(<code>string</code> username,
                            <code>string</code> password,
                            <code>string</code> appName)
-</pre></div><div class="definition"><h4 class="function" id="Fn_AuthApi_useOfflineToken">useOfflineToken</h4>
+ </div><div class="definition"><h4 class="function" id="Fn_AuthApi_useOfflineToken">useOfflineToken</h4>
 <p class="doc">If you have an offline token stored for a user and would like to use that
 to get a fingerprint to user for normal auth procedures.
-</p><pre><code><a href="amie_api.html#Struct_AuthUserVO">AuthUserVO</a></code> useOfflineToken(<code>string</code> token,
+</p> <code><a href="#Struct_AuthUserVO">AuthUserVO</a></code> useOfflineToken(<code>string</code> token,
                            <code>string</code> appName)
-</pre></div><h3 class="service" id="Svc_FreebiesApi">FreebiesApi</h3>
+ </div><h3 class="service" id="Svc_FreebiesApi">FreebiesApi</h3>
 <p class="doc">@deprecated? (lucas)
 </p><div class="definition"><h4 class="function" id="Fn_FreebiesApi_getPlaylist">getPlaylist</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_SongVO">SongVO</a></code>&gt;</code> getPlaylist(<code>string</code> genreGroupId,
+ <code>list&lt;<code><a href="#Struct_SongVO">SongVO</a></code>&gt;</code> getPlaylist(<code>string</code> genreGroupId,
                          <code>string</code> excludeSongIds)
-</pre></div><div class="definition"><h4 class="function" id="Fn_FreebiesApi_getPlaylistSongIds">getPlaylistSongIds</h4>
+ </div><div class="definition"><h4 class="function" id="Fn_FreebiesApi_getPlaylistSongIds">getPlaylistSongIds</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code>string</code>&gt;</code> getPlaylistSongIds(<code>string</code> genreGroupId,
+ <code>list&lt;<code>string</code>&gt;</code> getPlaylistSongIds(<code>string</code> genreGroupId,
                                 <code>string</code> excludeSongIds)
-</pre></div><div class="definition"><h4 class="function" id="Fn_FreebiesApi_getAllGenresList">getAllGenresList</h4>
+ </div><div class="definition"><h4 class="function" id="Fn_FreebiesApi_getAllGenresList">getAllGenresList</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_GenreVO">GenreVO</a></code>&gt;</code> getAllGenresList()
-</pre></div><div class="definition"><h4 class="function" id="Fn_FreebiesApi_getAllGenreGroups">getAllGenreGroups</h4>
+ <code>list&lt;<code><a href="#Struct_GenreVO">GenreVO</a></code>&gt;</code> getAllGenresList()
+ </div><div class="definition"><h4 class="function" id="Fn_FreebiesApi_getAllGenreGroups">getAllGenreGroups</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_GenreGroupVO">GenreGroupVO</a></code>&gt;</code> getAllGenreGroups()
-</pre></div><div class="definition"><h4 class="function" id="Fn_FreebiesApi_freeCountInGroup">freeCountInGroup</h4>
+ <code>list&lt;<code><a href="#Struct_GenreGroupVO">GenreGroupVO</a></code>&gt;</code> getAllGenreGroups()
+ </div><div class="definition"><h4 class="function" id="Fn_FreebiesApi_freeCountInGroup">freeCountInGroup</h4>
 <p class="error">No doc</p>
-<pre><code>i32</code> freeCountInGroup(<code>string</code> genreGroupId)
-</pre></div><h3 class="service" id="Svc_BrowseApi">BrowseApi</h3>
+ <code>i32</code> freeCountInGroup(<code>string</code> genreGroupId)
+ </div><h3 class="service" id="Svc_BrowseApi">BrowseApi</h3>
 <p class="doc">@todo (lucas) How to describe this...
 @todo (lucas) Add charts
 @todo (lucas) buildout
 </p><div class="definition"><h4 class="function" id="Fn_BrowseApi_newReleases">newReleases</h4>
 <p class="doc">OLD STUFF
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_AlbumVO">AlbumVO</a></code>&gt;</code> newReleases(<code>i32</code> offset,
+</p> <code>list&lt;<code><a href="#Struct_AlbumVO">AlbumVO</a></code>&gt;</code> newReleases(<code>i32</code> offset,
                           <code>i32</code> limit,
                           <code>string</code> genreGroupId)
-</pre></div><div class="definition"><h4 class="function" id="Fn_BrowseApi_popular">popular</h4>
+ </div><div class="definition"><h4 class="function" id="Fn_BrowseApi_popular">popular</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_AlbumVO">AlbumVO</a></code>&gt;</code> popular(<code>i32</code> offset,
+ <code>list&lt;<code><a href="#Struct_AlbumVO">AlbumVO</a></code>&gt;</code> popular(<code>i32</code> offset,
                       <code>i32</code> limit,
                       <code>string</code> genreGroupId)
-</pre></div><div class="definition"><h4 class="function" id="Fn_BrowseApi_top25Albums">top25Albums</h4>
+ </div><div class="definition"><h4 class="function" id="Fn_BrowseApi_top25Albums">top25Albums</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_AlbumVO">AlbumVO</a></code>&gt;</code> top25Albums(<code>string</code> genreGroupId)
-</pre></div><div class="definition"><h4 class="function" id="Fn_BrowseApi_top25Songs">top25Songs</h4>
+ <code>list&lt;<code><a href="#Struct_AlbumVO">AlbumVO</a></code>&gt;</code> top25Albums(<code>string</code> genreGroupId)
+ </div><div class="definition"><h4 class="function" id="Fn_BrowseApi_top25Songs">top25Songs</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_SongVO">SongVO</a></code>&gt;</code> top25Songs(<code>string</code> genreGroupId)
-</pre></div><div class="definition"><h4 class="function" id="Fn_BrowseApi_artists">artists</h4>
+ <code>list&lt;<code><a href="#Struct_SongVO">SongVO</a></code>&gt;</code> top25Songs(<code>string</code> genreGroupId)
+ </div><div class="definition"><h4 class="function" id="Fn_BrowseApi_artists">artists</h4>
 <p class="doc">NEW STUFF
-</p><pre><code><a href="amie_api.html#Struct_PagedArtistListVO">PagedArtistListVO</a></code> artists(<code>string</code> genreIds,
+</p> <code><a href="#Struct_PagedArtistListVO">PagedArtistListVO</a></code> artists(<code>string</code> genreIds,
                           <code>i32</code> sort,
                           <code>i32</code> page,
                           <code>i32</code> perPage)
-</pre></div><div class="definition"><h4 class="function" id="Fn_BrowseApi_albums">albums</h4>
+ </div><div class="definition"><h4 class="function" id="Fn_BrowseApi_albums">albums</h4>
 <p class="error">No doc</p>
-<pre><code><a href="amie_api.html#Struct_PagedArtistListVO">PagedArtistListVO</a></code> albums(<code>string</code> genreIds,
+ <code><a href="#Struct_PagedArtistListVO">PagedArtistListVO</a></code> albums(<code>string</code> genreIds,
                          <code>i32</code> sort,
                          <code>string</code> priceFilter,
                          <code>i32</code> page,
                          <code>i32</code> perPage)
-</pre></div><div class="definition"><h4 class="function" id="Fn_BrowseApi_songs">songs</h4>
+ </div><div class="definition"><h4 class="function" id="Fn_BrowseApi_songs">songs</h4>
 <p class="error">No doc</p>
-<pre><code><a href="amie_api.html#Struct_PagedArtistListVO">PagedArtistListVO</a></code> songs(<code>string</code> genreIds,
+ <code><a href="#Struct_PagedArtistListVO">PagedArtistListVO</a></code> songs(<code>string</code> genreIds,
                         <code>i32</code> sort,
                         <code>string</code> priceFilter,
                         <code>i32</code> page,
                         <code>i32</code> perPage)
-</pre></div><div class="definition"><h4 class="function" id="Fn_BrowseApi_genreGroupTree">genreGroupTree</h4>
+ </div><div class="definition"><h4 class="function" id="Fn_BrowseApi_genreGroupTree">genreGroupTree</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_GenreGroupTreeVO">GenreGroupTreeVO</a></code>&gt;</code> genreGroupTree()
-</pre></div><h3 class="service" id="Svc_SearchApi">SearchApi</h3>
+ <code>list&lt;<code><a href="#Struct_GenreGroupTreeVO">GenreGroupTreeVO</a></code>&gt;</code> genreGroupTree()
+ </div><h3 class="service" id="Svc_SearchApi">SearchApi</h3>
 <p class="error">No doc</p>
 <div class="definition"><h4 class="function" id="Fn_SearchApi_artists">artists</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_ArtistVO">ArtistVO</a></code>&gt;</code> artists(<code>string</code> query)
-</pre></div><div class="definition"><h4 class="function" id="Fn_SearchApi_albums">albums</h4>
+ <code>list&lt;<code><a href="#Struct_ArtistVO">ArtistVO</a></code>&gt;</code> artists(<code>string</code> query)
+ </div><div class="definition"><h4 class="function" id="Fn_SearchApi_albums">albums</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_AlbumVO">AlbumVO</a></code>&gt;</code> albums(<code>string</code> query)
-</pre></div><div class="definition"><h4 class="function" id="Fn_SearchApi_songs">songs</h4>
+ <code>list&lt;<code><a href="#Struct_AlbumVO">AlbumVO</a></code>&gt;</code> albums(<code>string</code> query)
+ </div><div class="definition"><h4 class="function" id="Fn_SearchApi_songs">songs</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_SongVO">SongVO</a></code>&gt;</code> songs(<code>string</code> query)
-</pre></div><div class="definition"><h4 class="function" id="Fn_SearchApi_find">find</h4>
+ <code>list&lt;<code><a href="#Struct_SongVO">SongVO</a></code>&gt;</code> songs(<code>string</code> query)
+ </div><div class="definition"><h4 class="function" id="Fn_SearchApi_find">find</h4>
 <p class="error">No doc</p>
-<pre><code><a href="amie_api.html#Struct_SearchFindResults">SearchFindResults</a></code> find(<code>string</code> artists,
+ <code><a href="#Struct_SearchFindResults">SearchFindResults</a></code> find(<code>string</code> artists,
                        <code>string</code> songs)
-</pre></div><h3 class="service" id="Svc_PricingApi">PricingApi</h3>
+ </div><h3 class="service" id="Svc_PricingApi">PricingApi</h3>
 <p class="error">No doc</p>
 <div class="definition"><h4 class="function" id="Fn_PricingApi_song">song</h4>
 <p class="error">No doc</p>
-<pre><code>string</code> song(<code>string</code> id)
-</pre></div><h3 class="service" id="Svc_UserApi">UserApi</h3>
+ <code>string</code> song(<code>string</code> id)
+ </div><h3 class="service" id="Svc_UserApi">UserApi</h3>
 <p class="error">No doc</p>
 <div class="definition"><h4 class="function" id="Fn_UserApi_playlists">playlists</h4>
 <p class="doc">Get a list of all playlists created by the user.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_PlaylistVO">PlaylistVO</a></code>&gt;</code> playlists(<code><a href="amie_api.html#Typedef_userIdentifierRef">userIdentifierRef</a></code> user)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_UserApi_get">get</h4>
+</p> <code>list&lt;<code><a href="#Struct_PlaylistVO">PlaylistVO</a></code>&gt;</code> playlists(<code><a href="#Typedef_userIdentifierRef">userIdentifierRef</a></code> user)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_UserApi_get">get</h4>
 <p class="doc">Fetch simple meta data for a user.
-</p><pre><code><a href="amie_api.html#Struct_UserVO">UserVO</a></code> get(<code><a href="amie_api.html#Typedef_userIdentifierRef">userIdentifierRef</a></code> user)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_UserApi_multiGet">multiGet</h4>
+</p> <code><a href="#Struct_UserVO">UserVO</a></code> get(<code><a href="#Typedef_userIdentifierRef">userIdentifierRef</a></code> user)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_UserApi_multiGet">multiGet</h4>
 <p class="doc">Fetch simple meta data for a list of users.
-</p><pre><code><a href="amie_api.html#Struct_UserVO">UserVO</a></code> multiGet(<code><a href="amie_api.html#Typedef_userIdentifierRef">userIdentifierRef</a></code> userIdList)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_UserApi_friends">friends</h4>
+</p> <code><a href="#Struct_UserVO">UserVO</a></code> multiGet(<code><a href="#Typedef_userIdentifierRef">userIdentifierRef</a></code> userIdList)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_UserApi_friends">friends</h4>
 <p class="doc">List all friends of a user.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_UserVO">UserVO</a></code>&gt;</code> friends(<code><a href="amie_api.html#Typedef_userIdentifierRef">userIdentifierRef</a></code> user)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_UserApi_create">create</h4>
+</p> <code>list&lt;<code><a href="#Struct_UserVO">UserVO</a></code>&gt;</code> friends(<code><a href="#Typedef_userIdentifierRef">userIdentifierRef</a></code> user)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_UserApi_create">create</h4>
 <p class="error">No doc</p>
-<pre><code><a href="amie_api.html#Struct_CreateUserResponseVO">CreateUserResponseVO</a></code> create(<code>string</code> email,
+ <code><a href="#Struct_CreateUserResponseVO">CreateUserResponseVO</a></code> create(<code>string</code> email,
                             <code>string</code> password,
                             <code>string</code> username)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_UserApi_savedItemCount">savedItemCount</h4>
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_UserApi_savedItemCount">savedItemCount</h4>
 <p class="error">No doc</p>
-<pre><code>i32</code> savedItemCount(<code><a href="amie_api.html#Typedef_userIdentifierRef">userIdentifierRef</a></code> user)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_UserApi_savedAlbums">savedAlbums</h4>
+ <code>i32</code> savedItemCount(<code><a href="#Typedef_userIdentifierRef">userIdentifierRef</a></code> user)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_UserApi_savedAlbums">savedAlbums</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_AlbumVO">AlbumVO</a></code>&gt;</code> savedAlbums(<code><a href="amie_api.html#Typedef_userIdentifierRef">userIdentifierRef</a></code> user)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_UserApi_savedSongs">savedSongs</h4>
+ <code>list&lt;<code><a href="#Struct_AlbumVO">AlbumVO</a></code>&gt;</code> savedAlbums(<code><a href="#Typedef_userIdentifierRef">userIdentifierRef</a></code> user)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_UserApi_savedSongs">savedSongs</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_SongVO">SongVO</a></code>&gt;</code> savedSongs(<code><a href="amie_api.html#Typedef_userIdentifierRef">userIdentifierRef</a></code> user)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_UserApi_recs">recs</h4>
+ <code>list&lt;<code><a href="#Struct_SongVO">SongVO</a></code>&gt;</code> savedSongs(<code><a href="#Typedef_userIdentifierRef">userIdentifierRef</a></code> user)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_UserApi_recs">recs</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_RecVO">RecVO</a></code>&gt;</code> recs(<code><a href="amie_api.html#Typedef_userIdentifierRef">userIdentifierRef</a></code> user,
+ <code>list&lt;<code><a href="#Struct_RecVO">RecVO</a></code>&gt;</code> recs(<code><a href="#Typedef_userIdentifierRef">userIdentifierRef</a></code> user,
                  <code>i32</code> limit,
                  <code>i32</code> offset)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_UserApi_playHistory">playHistory</h4>
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_UserApi_playHistory">playHistory</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_PlayHistoryVO">PlayHistoryVO</a></code>&gt;</code> playHistory(<code><a href="amie_api.html#Typedef_userIdentifierRef">userIdentifierRef</a></code> user,
+ <code>list&lt;<code><a href="#Struct_PlayHistoryVO">PlayHistoryVO</a></code>&gt;</code> playHistory(<code><a href="#Typedef_userIdentifierRef">userIdentifierRef</a></code> user,
                                 <code>i32</code> limit,
                                 <code>i32</code> offset)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_UserApi_save">save</h4>
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_UserApi_save">save</h4>
 <p class="error">No doc</p>
-<pre><code>bool</code> save(<code>string</code> fingerprint,
+ <code>bool</code> save(<code>string</code> fingerprint,
           <code>string</code> type,
           <code>string</code> id)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_UserApi_fannedArtists">fannedArtists</h4>
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_UserApi_fannedArtists">fannedArtists</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_ArtistVO">ArtistVO</a></code>&gt;</code> fannedArtists(<code><a href="amie_api.html#Typedef_userIdentifierRef">userIdentifierRef</a></code> user)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><h3 class="service" id="Svc_PlaylistApi">PlaylistApi</h3>
+ <code>list&lt;<code><a href="#Struct_ArtistVO">ArtistVO</a></code>&gt;</code> fannedArtists(<code><a href="#Typedef_userIdentifierRef">userIdentifierRef</a></code> user)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><h3 class="service" id="Svc_PlaylistApi">PlaylistApi</h3>
 <p class="error">No doc</p>
 <div class="definition"><h4 class="function" id="Fn_PlaylistApi_get">get</h4>
 <p class="error">No doc</p>
-<pre><code><a href="amie_api.html#Struct_PlaylistVO">PlaylistVO</a></code> get(<code>string</code> playlistId)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_multiGet">multiGet</h4>
+ <code><a href="#Struct_PlaylistVO">PlaylistVO</a></code> get(<code>string</code> playlistId)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_multiGet">multiGet</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_PlaylistVO">PlaylistVO</a></code>&gt;</code> multiGet(<code>string</code> playlistIdList)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_create">create</h4>
+ <code>list&lt;<code><a href="#Struct_PlaylistVO">PlaylistVO</a></code>&gt;</code> multiGet(<code>string</code> playlistIdList)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_create">create</h4>
 <p class="error">No doc</p>
-<pre><code><a href="amie_api.html#Struct_PlaylistVO">PlaylistVO</a></code> create(<code><a href="amie_api.html#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
+ <code><a href="#Struct_PlaylistVO">PlaylistVO</a></code> create(<code><a href="#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
                   <code>string</code> title,
                   <code>string</code> description)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_copy">copy</h4>
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_copy">copy</h4>
 <p class="error">No doc</p>
-<pre><code><a href="amie_api.html#Struct_PlaylistVO">PlaylistVO</a></code> copy(<code><a href="amie_api.html#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
+ <code><a href="#Struct_PlaylistVO">PlaylistVO</a></code> copy(<code><a href="#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
                 <code>string</code> playlistId)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_info">info</h4>
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_info">info</h4>
 <p class="error">No doc</p>
-<pre><code><a href="amie_api.html#Struct_PlaylistProfileVO">PlaylistProfileVO</a></code> info(<code>string</code> playlistId)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_addCollaborator">addCollaborator</h4>
+ <code><a href="#Struct_PlaylistProfileVO">PlaylistProfileVO</a></code> info(<code>string</code> playlistId)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_addCollaborator">addCollaborator</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_PlaylistCollaboratorVO">PlaylistCollaboratorVO</a></code>&gt;</code> addCollaborator(<code><a href="amie_api.html#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
+ <code>list&lt;<code><a href="#Struct_PlaylistCollaboratorVO">PlaylistCollaboratorVO</a></code>&gt;</code> addCollaborator(<code><a href="#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
                                              <code>string</code> playlistId,
                                              <code>string</code> collaboratorId)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_removeCollaborator">removeCollaborator</h4>
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_removeCollaborator">removeCollaborator</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_PlaylistCollaboratorVO">PlaylistCollaboratorVO</a></code>&gt;</code> removeCollaborator(<code><a href="amie_api.html#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
+ <code>list&lt;<code><a href="#Struct_PlaylistCollaboratorVO">PlaylistCollaboratorVO</a></code>&gt;</code> removeCollaborator(<code><a href="#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
                                                 <code>string</code> playlistId,
                                                 <code>string</code> collaboratorId)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_addSong">addSong</h4>
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_addSong">addSong</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_SongVO">SongVO</a></code>&gt;</code> addSong(<code><a href="amie_api.html#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
+ <code>list&lt;<code><a href="#Struct_SongVO">SongVO</a></code>&gt;</code> addSong(<code><a href="#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
                      <code>string</code> playlistId,
                      <code>string</code> songId,
                      <code>i32</code> position)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_addSongList">addSongList</h4>
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_addSongList">addSongList</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_SongVO">SongVO</a></code>&gt;</code> addSongList(<code><a href="amie_api.html#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
+ <code>list&lt;<code><a href="#Struct_SongVO">SongVO</a></code>&gt;</code> addSongList(<code><a href="#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
                          <code>string</code> playlistId,
                          <code>string</code> songIdList,
                          <code>i32</code> position)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_removeSong">removeSong</h4>
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_removeSong">removeSong</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_SongVO">SongVO</a></code>&gt;</code> removeSong(<code><a href="amie_api.html#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
+ <code>list&lt;<code><a href="#Struct_SongVO">SongVO</a></code>&gt;</code> removeSong(<code><a href="#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
                         <code>string</code> playlistId,
                         <code>string</code> songId)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_removeSongList">removeSongList</h4>
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_removeSongList">removeSongList</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_SongVO">SongVO</a></code>&gt;</code> removeSongList(<code><a href="amie_api.html#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
+ <code>list&lt;<code><a href="#Struct_SongVO">SongVO</a></code>&gt;</code> removeSongList(<code><a href="#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
                             <code>string</code> playlistId,
                             <code>string</code> songIdList)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_updateSequence">updateSequence</h4>
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_updateSequence">updateSequence</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_SongVO">SongVO</a></code>&gt;</code> updateSequence(<code><a href="amie_api.html#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
+ <code>list&lt;<code><a href="#Struct_SongVO">SongVO</a></code>&gt;</code> updateSequence(<code><a href="#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
                             <code>string</code> playlistId,
                             <code>string</code> songIdList)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_updateTitle">updateTitle</h4>
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_updateTitle">updateTitle</h4>
 <p class="error">No doc</p>
-<pre><code>string</code> updateTitle(<code><a href="amie_api.html#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
+ <code>string</code> updateTitle(<code><a href="#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
                    <code>string</code> playlistId,
                    <code>string</code> title)
-</pre></div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_updateDescription">updateDescription</h4>
+ </div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_updateDescription">updateDescription</h4>
 <p class="error">No doc</p>
-<pre><code>string</code> updateDescription(<code><a href="amie_api.html#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
+ <code>string</code> updateDescription(<code><a href="#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
                          <code>string</code> playlistId,
                          <code>string</code> description)
-</pre></div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_deletePlaylist">deletePlaylist</h4>
+ </div><div class="definition"><h4 class="function" id="Fn_PlaylistApi_deletePlaylist">deletePlaylist</h4>
 <p class="error">No doc</p>
-<pre><code>bool</code> deletePlaylist(<code><a href="amie_api.html#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
+ <code>bool</code> deletePlaylist(<code><a href="#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
                     <code>string</code> playlistId)
-</pre></div><h3 class="service" id="Svc_ShrekApi">ShrekApi</h3>
+ </div><h3 class="service" id="Svc_ShrekApi">ShrekApi</h3>
 <p class="error">No doc</p>
 <div class="definition"><h4 class="function" id="Fn_ShrekApi_autocomplete">autocomplete</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_ShrekAutoCompleteArtist">ShrekAutoCompleteArtist</a></code>&gt;</code> autocomplete(<code>string</code> query)
-</pre></div><div class="definition"><h4 class="function" id="Fn_ShrekApi_recommend">recommend</h4>
+ <code>list&lt;<code><a href="#Struct_ShrekAutoCompleteArtist">ShrekAutoCompleteArtist</a></code>&gt;</code> autocomplete(<code>string</code> query)
+ </div><div class="definition"><h4 class="function" id="Fn_ShrekApi_recommend">recommend</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_ShrekResult">ShrekResult</a></code>&gt;</code> recommend(<code>string</code> pids)
-</pre></div><div class="definition"><h4 class="function" id="Fn_ShrekApi_playlist">playlist</h4>
+ <code>list&lt;<code><a href="#Struct_ShrekResult">ShrekResult</a></code>&gt;</code> recommend(<code>string</code> pids)
+ </div><div class="definition"><h4 class="function" id="Fn_ShrekApi_playlist">playlist</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_SongVO">SongVO</a></code>&gt;</code> playlist(<code>string</code> artistIds,
+ <code>list&lt;<code><a href="#Struct_SongVO">SongVO</a></code>&gt;</code> playlist(<code>string</code> artistIds,
                       <code>string</code> excludeSongIds)
-</pre></div><div class="definition"><h4 class="function" id="Fn_ShrekApi_stationToPids">stationToPids</h4>
+ </div><div class="definition"><h4 class="function" id="Fn_ShrekApi_stationToPids">stationToPids</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code>string</code>&gt;</code> stationToPids(<code>string</code> station)
-</pre></div><h3 class="service" id="Svc_AutocompleteApi">AutocompleteApi</h3>
+ <code>list&lt;<code>string</code>&gt;</code> stationToPids(<code>string</code> station)
+ </div><h3 class="service" id="Svc_AutocompleteApi">AutocompleteApi</h3>
 <p class="error">No doc</p>
 <div class="definition"><h4 class="function" id="Fn_AutocompleteApi_artists">artists</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_ArtistVO">ArtistVO</a></code>&gt;</code> artists(<code>string</code> query)
-</pre></div><div class="definition"><h4 class="function" id="Fn_AutocompleteApi_albums">albums</h4>
+ <code>list&lt;<code><a href="#Struct_ArtistVO">ArtistVO</a></code>&gt;</code> artists(<code>string</code> query)
+ </div><div class="definition"><h4 class="function" id="Fn_AutocompleteApi_albums">albums</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_AlbumVO">AlbumVO</a></code>&gt;</code> albums(<code>string</code> query)
-</pre></div><div class="definition"><h4 class="function" id="Fn_AutocompleteApi_songs">songs</h4>
+ <code>list&lt;<code><a href="#Struct_AlbumVO">AlbumVO</a></code>&gt;</code> albums(<code>string</code> query)
+ </div><div class="definition"><h4 class="function" id="Fn_AutocompleteApi_songs">songs</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_SongVO">SongVO</a></code>&gt;</code> songs(<code>string</code> query)
-</pre></div><h3 class="service" id="Svc_RecApi">RecApi</h3>
+ <code>list&lt;<code><a href="#Struct_SongVO">SongVO</a></code>&gt;</code> songs(<code>string</code> query)
+ </div><h3 class="service" id="Svc_RecApi">RecApi</h3>
 <p class="error">No doc</p>
 <div class="definition"><h4 class="function" id="Fn_RecApi_latest">latest</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_RecVO">RecVO</a></code>&gt;</code> latest(<code>i32</code> offset,
+ <code>list&lt;<code><a href="#Struct_RecVO">RecVO</a></code>&gt;</code> latest(<code>i32</code> offset,
                    <code>i32</code> limit)
-</pre></div><div class="definition"><h4 class="function" id="Fn_RecApi_score">score</h4>
+ </div><div class="definition"><h4 class="function" id="Fn_RecApi_score">score</h4>
 <p class="error">No doc</p>
-<pre><code>bool</code> score(<code><a href="amie_api.html#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
-           <code><a href="amie_api.html#Typedef_recId">recId</a></code> recId,
+ <code>bool</code> score(<code><a href="#Typedef_userFingerprint">userFingerprint</a></code> fingerprint,
+           <code><a href="#Typedef_recId">recId</a></code> recId,
            <code>i32</code> score)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_RecApi_latestForTraining">latestForTraining</h4>
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_RecApi_latestForTraining">latestForTraining</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_RecVO">RecVO</a></code>&gt;</code> latestForTraining(<code><a href="amie_api.html#Typedef_userFingerprint">userFingerprint</a></code> fingerprint)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><h3 class="service" id="Svc_RecommendationsApi">RecommendationsApi</h3>
+ <code>list&lt;<code><a href="#Struct_RecVO">RecVO</a></code>&gt;</code> latestForTraining(<code><a href="#Typedef_userFingerprint">userFingerprint</a></code> fingerprint)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><h3 class="service" id="Svc_RecommendationsApi">RecommendationsApi</h3>
 <p class="error">No doc</p>
 <div class="definition"><h4 class="function" id="Fn_RecommendationsApi_isNew">isNew</h4>
 <p class="doc">Is the current actor new to our recommendations system?
-</p><pre><code>bool</code> isNew()
-</pre></div><div class="definition"><h4 class="function" id="Fn_RecommendationsApi_refresh">refresh</h4>
+</p> <code>bool</code> isNew()
+ </div><div class="definition"><h4 class="function" id="Fn_RecommendationsApi_refresh">refresh</h4>
 <p class="doc">Recalculate recommendations for the current actor because some information has been changed.
-</p><pre><code>bool</code> refresh()
-</pre></div><div class="definition"><h4 class="function" id="Fn_RecommendationsApi_addSeedArtist">addSeedArtist</h4>
+</p> <code>bool</code> refresh()
+ </div><div class="definition"><h4 class="function" id="Fn_RecommendationsApi_addSeedArtist">addSeedArtist</h4>
 <p class="doc">Add a favorite artist for the current actor.  Carries through if the user is not
 logged in and signs up or signs in.
 @param string name (Required) The name of the favorite artist to try and add.
 @param string source (Required) Was this a direct input, lastfm favorite artist,  pandora station?
 @todo(lucas) Figure out a way to better integrate the source enums.
 @return mixed Null if no artist match, a RecommendationSeedArtistVO if added successfully.
-</p><pre><code><a href="amie_api.html#Struct_RecommendationsSeedArtistVO">RecommendationsSeedArtistVO</a></code> addSeedArtist(<code>string</code> name,
+</p> <code><a href="#Struct_RecommendationsSeedArtistVO">RecommendationsSeedArtistVO</a></code> addSeedArtist(<code>string</code> name,
                                           <code>string</code> source)
-</pre></div><div class="definition"><h4 class="function" id="Fn_RecommendationsApi_removeSeedArtist">removeSeedArtist</h4>
+ </div><div class="definition"><h4 class="function" id="Fn_RecommendationsApi_removeSeedArtist">removeSeedArtist</h4>
 <p class="doc">Remove an artist from the current actor's favorite artists.
 @param string name (Required) The name of the artist to try and remove
 @return bool Whether or not the artist was successfully removed.
-</p><pre><code>bool</code> removeSeedArtist(<code>string</code> name)
-</pre></div><div class="definition"><h4 class="function" id="Fn_RecommendationsApi_listSeedArtists">listSeedArtists</h4>
+</p> <code>bool</code> removeSeedArtist(<code>string</code> name)
+ </div><div class="definition"><h4 class="function" id="Fn_RecommendationsApi_listSeedArtists">listSeedArtists</h4>
 <p class="doc">Get all favorite artists for the current actor.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_RecommendationsSeedArtistVO">RecommendationsSeedArtistVO</a></code>&gt;</code> listSeedArtists()
-</pre></div><div class="definition"><h4 class="function" id="Fn_RecommendationsApi_recommend">recommend</h4>
+</p> <code>list&lt;<code><a href="#Struct_RecommendationsSeedArtistVO">RecommendationsSeedArtistVO</a></code>&gt;</code> listSeedArtists()
+ </div><div class="definition"><h4 class="function" id="Fn_RecommendationsApi_recommend">recommend</h4>
 <p class="doc">Actually get some recommended  albums for the current user.
 @param int offset (Optional) The offset of the result set.  used for paging.
 @param int count (Optional) How many recommended albums to return.
 @param string genreGroupRef (Optional) Dasherized name of a genre group to limit the result set to.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_RecommendationVO">RecommendationVO</a></code>&gt;</code> recommend(<code>i32</code> offset,
+</p> <code>list&lt;<code><a href="#Struct_RecommendationVO">RecommendationVO</a></code>&gt;</code> recommend(<code>i32</code> offset,
                                  <code>i32</code> count,
                                  <code>string</code> genreGroup,
                                  <code>string</code> fingerprint)
-</pre></div><h3 class="service" id="Svc_SalesReportApi">SalesReportApi</h3>
+ </div><h3 class="service" id="Svc_SalesReportApi">SalesReportApi</h3>
 <p class="error">No doc</p>
 <div class="definition"><h4 class="function" id="Fn_SalesReportApi_getBasicSalesReport">getBasicSalesReport</h4>
 <p class="error">No doc</p>
-<pre><code><a href="amie_api.html#Struct_BasicSalesReportVO">BasicSalesReportVO</a></code> getBasicSalesReport(<code>i32</code> quarter,
+ <code><a href="#Struct_BasicSalesReportVO">BasicSalesReportVO</a></code> getBasicSalesReport(<code>i32</code> quarter,
                                        <code>i32</code> year)
-</pre></div><h3 class="service" id="Svc_PandoraApi">PandoraApi</h3>
+ </div><h3 class="service" id="Svc_PandoraApi">PandoraApi</h3>
 <p class="doc">Proxy for the Pandora API.
 </p><div class="definition"><h4 class="function" id="Fn_PandoraApi_stations">stations</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_PandoraStationVO">PandoraStationVO</a></code>&gt;</code> stations(<code>string</code> user)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_PandoraApi_bookmarkedSongs">bookmarkedSongs</h4>
+ <code>list&lt;<code><a href="#Struct_PandoraStationVO">PandoraStationVO</a></code>&gt;</code> stations(<code>string</code> user)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_PandoraApi_bookmarkedSongs">bookmarkedSongs</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_PandoraBookmarkedSongVO">PandoraBookmarkedSongVO</a></code>&gt;</code> bookmarkedSongs(<code>string</code> user)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><div class="definition"><h4 class="function" id="Fn_PandoraApi_bookmarkedArtists">bookmarkedArtists</h4>
+ <code>list&lt;<code><a href="#Struct_PandoraBookmarkedSongVO">PandoraBookmarkedSongVO</a></code>&gt;</code> bookmarkedSongs(<code>string</code> user)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><div class="definition"><h4 class="function" id="Fn_PandoraApi_bookmarkedArtists">bookmarkedArtists</h4>
 <p class="error">No doc</p>
-<pre><code>list&lt;<code><a href="amie_api.html#Struct_PandoraBookmarkedArtistVO">PandoraBookmarkedArtistVO</a></code>&gt;</code> bookmarkedArtists(<code>string</code> user)
-    throws <code><a href="amie_api.html#Struct_AmieApiException">AmieApiException</a></code>
-</pre></div><h3 class="service" id="Svc_LastfmApi">LastfmApi</h3>
+ <code>list&lt;<code><a href="#Struct_PandoraBookmarkedArtistVO">PandoraBookmarkedArtistVO</a></code>&gt;</code> bookmarkedArtists(<code>string</code> user)
+    throws <code><a href="#Struct_AmieApiException">AmieApiException</a></code>
+ </div><h3 class="service" id="Svc_LastfmApi">LastfmApi</h3>
 <p class="doc">Proxy for accessing the Last.fm API.
 </p><div class="definition"><h4 class="function" id="Fn_LastfmApi_userTopArtists">userTopArtists</h4>
 <p class="doc">@param string username The last.fm username to fetch for.
 @param string period One of overall | 7day | 3month | 6month | 12month - The time period over which to retrieve top artists for.
 @see http://www.last.fm/api/show?service=300
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_LastfmArtistVO">LastfmArtistVO</a></code>&gt;</code> userTopArtists(<code>string</code> user,
+</p> <code>list&lt;<code><a href="#Struct_LastfmArtistVO">LastfmArtistVO</a></code>&gt;</code> userTopArtists(<code>string</code> user,
                                     <code>string</code> period)
-</pre></div><h3 class="service" id="Svc_HypemachineApi">HypemachineApi</h3>
+ </div><h3 class="service" id="Svc_HypemachineApi">HypemachineApi</h3>
 <p class="doc">Proxy for accessing Hype Machine's API.
 </p><div class="definition"><h4 class="function" id="Fn_HypemachineApi_lovedTracks">lovedTracks</h4>
 <p class="doc">Retreives a list of tracks the user has marked as loved from
 http://hypem.com/playlist/loved/{username}/json/{page}/feed.xml
 @param string username The Hype Machine username to fetch for.
 @param int page Paging support.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_HypemachineSongVO">HypemachineSongVO</a></code>&gt;</code> lovedTracks(<code>string</code> username,
+</p> <code>list&lt;<code><a href="#Struct_HypemachineSongVO">HypemachineSongVO</a></code>&gt;</code> lovedTracks(<code>string</code> username,
                                     <code>string</code> page)
-</pre></div><div class="definition"><h4 class="function" id="Fn_HypemachineApi_listenHistory">listenHistory</h4>
+ </div><div class="definition"><h4 class="function" id="Fn_HypemachineApi_listenHistory">listenHistory</h4>
 <p class="doc">Retrieves a list of tracks included in the users listen history on Hype
 Machine from http://hypem.com/playlist/history/{username}/json/{page}/feed.xml
 @param string username The Hype Machine username to fetch for.
 @param int page Paging support.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_HypemachineSongVO">HypemachineSongVO</a></code>&gt;</code> listenHistory(<code>string</code> username,
+</p> <code>list&lt;<code><a href="#Struct_HypemachineSongVO">HypemachineSongVO</a></code>&gt;</code> listenHistory(<code>string</code> username,
                                       <code>string</code> page)
-</pre></div><h3 class="service" id="Svc_SongzaApi">SongzaApi</h3>
+ </div><h3 class="service" id="Svc_SongzaApi">SongzaApi</h3>
 <p class="doc">Proxy for accessing Songza's API.
 </p><div class="definition"><h4 class="function" id="Fn_SongzaApi_playlist">playlist</h4>
 <p class="doc">Fetchs all songs included in a given user's playlist from
 http://api.songza.com/1.0/playlist/{username}.json and converts them into a
 list of clean SongzaSongVO objects.
 @param string username The Songza username to fetch the playlist for.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_SongzaSongVO">SongzaSongVO</a></code>&gt;</code> playlist(<code>string</code> username)
-</pre></div><h3 class="service" id="Svc_TumblrApi">TumblrApi</h3>
+</p> <code>list&lt;<code><a href="#Struct_SongzaSongVO">SongzaSongVO</a></code>&gt;</code> playlist(<code>string</code> username)
+ </div><h3 class="service" id="Svc_TumblrApi">TumblrApi</h3>
 <p class="error">No doc</p>
 <div class="definition"><h4 class="function" id="Fn_TumblrApi_newPost">newPost</h4>
 <p class="error">No doc</p>
-<pre><code>bool</code> newPost(<code>string</code> email,
+ <code>bool</code> newPost(<code>string</code> email,
              <code>string</code> password,
              <code>string</code> title,
              <code>string</code> body,
              <code>string</code> tags,
              <code>string</code> group)
-</pre></div><h3 class="service" id="Svc_NewsletterApi">NewsletterApi</h3>
+ </div><h3 class="service" id="Svc_NewsletterApi">NewsletterApi</h3>
 <p class="doc">Provides access to the Amie Street newsletter archives.
 The most common application is to call NewsletterApi.latest(0,0) (which
 obviously gets the latest newsletter marked as sent) and then NewsletterApi.items
@@ -868,23 +868,23 @@ to get everything that was sent out in the email.
 </p><div class="definition"><h4 class="function" id="Fn_NewsletterApi_get">get</h4>
 <p class="doc">Gets simple meta data for a single newsletter.
 @param string id The newsletter unique id.
-</p><pre><code><a href="amie_api.html#Struct_NewsletterVO">NewsletterVO</a></code> get(<code>string</code> id)
-</pre></div><div class="definition"><h4 class="function" id="Fn_NewsletterApi_latest">latest</h4>
+</p> <code><a href="#Struct_NewsletterVO">NewsletterVO</a></code> get(<code>string</code> id)
+ </div><div class="definition"><h4 class="function" id="Fn_NewsletterApi_latest">latest</h4>
 <p class="doc">Gets a list of newsletters sorted by the date they were marked as sent.
 @param int limit Max number to fetch.
 @param int offset Paging support.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_NewsletterVO">NewsletterVO</a></code>&gt;</code> latest(<code>i32</code> limit,
+</p> <code>list&lt;<code><a href="#Struct_NewsletterVO">NewsletterVO</a></code>&gt;</code> latest(<code>i32</code> limit,
                           <code>i32</code> offset)
-</pre></div><div class="definition"><h4 class="function" id="Fn_NewsletterApi_items">items</h4>
+ </div><div class="definition"><h4 class="function" id="Fn_NewsletterApi_items">items</h4>
 <p class="doc">Get a list of NewsletterItemVO's which were included in this newsletter.
 @param string id The newsletter unique id.
-</p><pre><code>list&lt;<code><a href="amie_api.html#Struct_NewsletterItemVO">NewsletterItemVO</a></code>&gt;</code> items(<code>string</code> id)
-</pre></div><hr/><h2 id="Structs">Data structures</h2>
+</p> <code>list&lt;<code><a href="#Struct_NewsletterItemVO">NewsletterItemVO</a></code>&gt;</code> items(<code>string</code> id)
+ </div><hr/><h2 id="Structs">Data structures</h2>
 <div class="definition"><h3 id="Struct_AmieApiException">Exception: AmieApiException</h3>
 <p class="doc">The default exception thrown by all functions.
 </p><table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
-<tr><td>code</td><td><code><a href="amie_api.html#Enum_AmieApiErrorCode">AmieApiErrorCode</a></code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>message</td><td><code><a href="amie_api.html#Typedef_errorMessage">errorMessage</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>code</td><td><code><a href="#Enum_AmieApiErrorCode">AmieApiErrorCode</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>message</td><td><code><a href="#Typedef_errorMessage">errorMessage</a></code></td><td>yes</td><td></td><td></td></tr>
 </table><br/></div><div class="definition"><h3 id="Struct_GenreGroupVO">Struct: GenreGroupVO</h3>
 <p class="doc">Simple meta data for a Genre Group.
 Genre groups provide a hierarchy for all genres on Amie Street by grouping
@@ -905,9 +905,9 @@ genres into parent groups.
 </table><br/></div><div class="definition"><h3 id="Struct_GenreGroupTreeVO">Struct: GenreGroupTreeVO</h3>
 <p class="error">No doc</p>
 <table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
-<tr><td>genreGroup</td><td><code><a href="amie_api.html#Struct_GenreGroupVO">GenreGroupVO</a></code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>primaryGenres</td><td><code>list&lt;<code><a href="amie_api.html#Struct_GenreVO">GenreVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>listedGenres</td><td><code>list&lt;<code><a href="amie_api.html#Struct_GenreVO">GenreVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>genreGroup</td><td><code><a href="#Struct_GenreGroupVO">GenreGroupVO</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>primaryGenres</td><td><code>list&lt;<code><a href="#Struct_GenreVO">GenreVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>listedGenres</td><td><code>list&lt;<code><a href="#Struct_GenreVO">GenreVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
 </table><br/></div><div class="definition"><h3 id="Struct_VideoVO">Struct: VideoVO</h3>
 <p class="doc">Simple video meta data.
 @todo(lucas) This has been deprecated in terms of actually being functional
@@ -957,12 +957,12 @@ but has the serious potential to return in a while.
 </td></tr>
 <tr><td>url</td><td><code>string</code></td><td>yes</td><td></td><td>URL to the user's profile page
 </td></tr>
-<tr><td>image</td><td><code><a href="amie_api.html#Struct_ImageVO">ImageVO</a></code></td><td>yes</td><td></td><td>Image resources for the user
+<tr><td>image</td><td><code><a href="#Struct_ImageVO">ImageVO</a></code></td><td>yes</td><td></td><td>Image resources for the user
 </td></tr>
 </table><br/></div><div class="definition"><h3 id="Struct_UserWithPriceVO">Struct: UserWithPriceVO</h3>
 <p class="error">No doc</p>
 <table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
-<tr><td>user</td><td><code><a href="amie_api.html#Struct_UserVO">UserVO</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>user</td><td><code><a href="#Struct_UserVO">UserVO</a></code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>price</td><td><code>double</code></td><td>yes</td><td></td><td></td></tr>
 </table><br/></div><div class="definition"><h3 id="Struct_ArtistVO">Struct: ArtistVO</h3>
 <p class="doc">Simple meta data for an artist.
@@ -973,17 +973,17 @@ but has the serious potential to return in a while.
 </td></tr>
 <tr><td>url</td><td><code>string</code></td><td>yes</td><td></td><td>URL to this artists page on Amie Street.
 </td></tr>
-<tr><td>image</td><td><code><a href="amie_api.html#Struct_ImageVO">ImageVO</a></code></td><td>yes</td><td></td><td>Current default artist picture.
+<tr><td>image</td><td><code><a href="#Struct_ImageVO">ImageVO</a></code></td><td>yes</td><td></td><td>Current default artist picture.
 </td></tr>
 </table><br/></div><div class="definition"><h3 id="Struct_AlbumVO">Struct: AlbumVO</h3>
 <p class="doc">Simple meta data for an album
 </p><table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
 <tr><td>id</td><td><code>string</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>title</td><td><code>string</code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>artist</td><td><code><a href="amie_api.html#Struct_ArtistVO">ArtistVO</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>artist</td><td><code><a href="#Struct_ArtistVO">ArtistVO</a></code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>url</td><td><code>string</code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>image</td><td><code><a href="amie_api.html#Struct_ImageVO">ImageVO</a></code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>genres</td><td><code>list&lt;<code><a href="amie_api.html#Struct_GenreVO">GenreVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>image</td><td><code><a href="#Struct_ImageVO">ImageVO</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>genres</td><td><code>list&lt;<code><a href="#Struct_GenreVO">GenreVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>trackCount</td><td><code>i32</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>price</td><td><code>double</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>releaseDate</td><td><code>i32</code></td><td>yes</td><td></td><td></td></tr>
@@ -994,8 +994,8 @@ but has the serious potential to return in a while.
 </p><table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
 <tr><td>id</td><td><code>string</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>title</td><td><code>string</code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>album</td><td><code><a href="amie_api.html#Struct_AlbumVO">AlbumVO</a></code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>artist</td><td><code><a href="amie_api.html#Struct_ArtistVO">ArtistVO</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>album</td><td><code><a href="#Struct_AlbumVO">AlbumVO</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>artist</td><td><code><a href="#Struct_ArtistVO">ArtistVO</a></code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>url</td><td><code>string</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>length</td><td><code>i32</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>recs</td><td><code>i32</code></td><td>yes</td><td></td><td></td></tr>
@@ -1020,34 +1020,34 @@ artist and album information over the wire as well.
 <p class="doc">All meta information for a single artist.
 @todo (lucas) Finish filling this out.
 </p><table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
-<tr><td>artist</td><td><code><a href="amie_api.html#Struct_ArtistVO">ArtistVO</a></code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>albumList</td><td><code>list&lt;<code><a href="amie_api.html#Struct_AlbumVO">AlbumVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>artist</td><td><code><a href="#Struct_ArtistVO">ArtistVO</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>albumList</td><td><code>list&lt;<code><a href="#Struct_AlbumVO">AlbumVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
 </table><br/></div><div class="definition"><h3 id="Struct_PagedSongListVO">Struct: PagedSongListVO</h3>
 <p class="doc">A paged list of songs returned by Library.songs calls.
 </p><table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
 <tr><td>page</td><td><code>i32</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>limit</td><td><code>i32</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>hasNext</td><td><code>bool</code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>songs</td><td><code>list&lt;<code><a href="amie_api.html#Struct_SongVO">SongVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>songs</td><td><code>list&lt;<code><a href="#Struct_SongVO">SongVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
 </table><br/></div><div class="definition"><h3 id="Struct_PagedArtistListVO">Struct: PagedArtistListVO</h3>
 <p class="error">No doc</p>
 <table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
 <tr><td>page</td><td><code>i32</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>limit</td><td><code>i32</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>hasNext</td><td><code>bool</code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>artists</td><td><code>list&lt;<code><a href="amie_api.html#Struct_ArtistVO">ArtistVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>artists</td><td><code>list&lt;<code><a href="#Struct_ArtistVO">ArtistVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
 </table><br/></div><div class="definition"><h3 id="Struct_PagedAlbumListVO">Struct: PagedAlbumListVO</h3>
 <p class="error">No doc</p>
 <table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
 <tr><td>page</td><td><code>i32</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>limit</td><td><code>i32</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>hasNext</td><td><code>bool</code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>albums</td><td><code>list&lt;<code><a href="amie_api.html#Struct_AlbumVO">AlbumVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>albums</td><td><code>list&lt;<code><a href="#Struct_AlbumVO">AlbumVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
 </table><br/></div><div class="definition"><h3 id="Struct_AlbumProfileVO">Struct: AlbumProfileVO</h3>
 <p class="doc">Extended album meta information
 </p><table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
-<tr><td>album</td><td><code><a href="amie_api.html#Struct_AlbumVO">AlbumVO</a></code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>songs</td><td><code>list&lt;<code><a href="amie_api.html#Struct_SongVO">SongVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>album</td><td><code><a href="#Struct_AlbumVO">AlbumVO</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>songs</td><td><code>list&lt;<code><a href="#Struct_SongVO">SongVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
 </table><br/></div><div class="definition"><h3 id="Struct_ScrobbleProcedures">Struct: ScrobbleProcedures</h3>
 <p class="error">No doc</p>
 <table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
@@ -1059,8 +1059,8 @@ artist and album information over the wire as well.
 <tr><td>user_id</td><td><code>string</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>status</td><td><code>string</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>instance</td><td><code>string</code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>song</td><td><code><a href="amie_api.html#Struct_SongVO">SongVO</a></code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>procedures</td><td><code><a href="amie_api.html#Struct_ScrobbleProcedures">ScrobbleProcedures</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>song</td><td><code><a href="#Struct_SongVO">SongVO</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>procedures</td><td><code><a href="#Struct_ScrobbleProcedures">ScrobbleProcedures</a></code></td><td>yes</td><td></td><td></td></tr>
 </table><br/></div><div class="definition"><h3 id="Struct_PlaylistVO">Struct: PlaylistVO</h3>
 <p class="doc">Simple Playlist meta data.
 </p><table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
@@ -1068,7 +1068,7 @@ artist and album information over the wire as well.
 <tr><td>title</td><td><code>string</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>description</td><td><code>string</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>avg_rating</td><td><code>i32</code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>image</td><td><code><a href="amie_api.html#Struct_ImageVO">ImageVO</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>image</td><td><code><a href="#Struct_ImageVO">ImageVO</a></code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>url</td><td><code>string</code></td><td>yes</td><td></td><td></td></tr>
 </table><br/></div><div class="definition"><h3 id="Struct_PlaylistCollaboratorVO">Struct: PlaylistCollaboratorVO</h3>
 <p class="doc">Simple meta data for a playlist collaborator.
@@ -1079,28 +1079,28 @@ artist and album information over the wire as well.
 </table><br/></div><div class="definition"><h3 id="Struct_PlaylistProfileVO">Struct: PlaylistProfileVO</h3>
 <p class="doc">Extended meta information for a playlist.
 </p><table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
-<tr><td>playlist</td><td><code><a href="amie_api.html#Struct_PlaylistVO">PlaylistVO</a></code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>collaborators</td><td><code>list&lt;<code><a href="amie_api.html#Struct_PlaylistCollaboratorVO">PlaylistCollaboratorVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>songs</td><td><code>list&lt;<code><a href="amie_api.html#Struct_SongVO">SongVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>playlist</td><td><code><a href="#Struct_PlaylistVO">PlaylistVO</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>collaborators</td><td><code>list&lt;<code><a href="#Struct_PlaylistCollaboratorVO">PlaylistCollaboratorVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>songs</td><td><code>list&lt;<code><a href="#Struct_SongVO">SongVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
 </table><br/></div><div class="definition"><h3 id="Struct_AuthUserVO">Struct: AuthUserVO</h3>
 <p class="error">No doc</p>
 <table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
-<tr><td>fingerprint</td><td><code><a href="amie_api.html#Typedef_userFingerprint">userFingerprint</a></code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>user</td><td><code><a href="amie_api.html#Struct_UserVO">UserVO</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>fingerprint</td><td><code><a href="#Typedef_userFingerprint">userFingerprint</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>user</td><td><code><a href="#Struct_UserVO">UserVO</a></code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>balance</td><td><code>double</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>recBalance</td><td><code>i32</code></td><td>yes</td><td></td><td></td></tr>
 </table><br/></div><div class="definition"><h3 id="Struct_RecVO">Struct: RecVO</h3>
 <p class="error">No doc</p>
 <table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
-<tr><td>id</td><td><code><a href="amie_api.html#Typedef_recId">recId</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>id</td><td><code><a href="#Typedef_recId">recId</a></code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>review</td><td><code>string</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>sounds_like</td><td><code>string</code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>user</td><td><code><a href="amie_api.html#Struct_UserVO">UserVO</a></code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>song</td><td><code><a href="amie_api.html#Struct_SongVO">SongVO</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>user</td><td><code><a href="#Struct_UserVO">UserVO</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>song</td><td><code><a href="#Struct_SongVO">SongVO</a></code></td><td>yes</td><td></td><td></td></tr>
 </table><br/></div><div class="definition"><h3 id="Struct_ArtistSalesVO">Struct: ArtistSalesVO</h3>
 <p class="error">No doc</p>
 <table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
-<tr><td>artist</td><td><code><a href="amie_api.html#Struct_ArtistVO">ArtistVO</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>artist</td><td><code><a href="#Struct_ArtistVO">ArtistVO</a></code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>quarterRevenue</td><td><code>double</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>quarterArtistOwed</td><td><code>double</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>recCountQuarter</td><td><code>i32</code></td><td>yes</td><td></td><td></td></tr>
@@ -1109,7 +1109,7 @@ artist and album information over the wire as well.
 </table><br/></div><div class="definition"><h3 id="Struct_AlbumSalesVO">Struct: AlbumSalesVO</h3>
 <p class="error">No doc</p>
 <table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
-<tr><td>album</td><td><code><a href="amie_api.html#Struct_AlbumVO">AlbumVO</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>album</td><td><code><a href="#Struct_AlbumVO">AlbumVO</a></code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>albumBuyCount</td><td><code>i32</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>completionCount</td><td><code>i32</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>albumBuyRevenue</td><td><code>double</code></td><td>yes</td><td></td><td></td></tr>
@@ -1119,7 +1119,7 @@ artist and album information over the wire as well.
 </table><br/></div><div class="definition"><h3 id="Struct_SongSalesVO">Struct: SongSalesVO</h3>
 <p class="error">No doc</p>
 <table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
-<tr><td>song</td><td><code><a href="amie_api.html#Struct_SongVO">SongVO</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>song</td><td><code><a href="#Struct_SongVO">SongVO</a></code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>singleCount</td><td><code>i32</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>singleRevenue</td><td><code>double</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>quarterArtistOwed</td><td><code>double</code></td><td>yes</td><td></td><td></td></tr>
@@ -1130,15 +1130,15 @@ artist and album information over the wire as well.
 </table><br/></div><div class="definition"><h3 id="Struct_BasicSalesReportVO">Struct: BasicSalesReportVO</h3>
 <p class="error">No doc</p>
 <table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
-<tr><td>artistSales</td><td><code>list&lt;<code><a href="amie_api.html#Struct_ArtistSalesVO">ArtistSalesVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>albumSales</td><td><code>list&lt;<code><a href="amie_api.html#Struct_AlbumSalesVO">AlbumSalesVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>songSales</td><td><code>list&lt;<code><a href="amie_api.html#Struct_SongSalesVO">SongSalesVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>artistSales</td><td><code>list&lt;<code><a href="#Struct_ArtistSalesVO">ArtistSalesVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>albumSales</td><td><code>list&lt;<code><a href="#Struct_AlbumSalesVO">AlbumSalesVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>songSales</td><td><code>list&lt;<code><a href="#Struct_SongSalesVO">SongSalesVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
 </table><br/></div><div class="definition"><h3 id="Struct_SearchFindArtistResult">Struct: SearchFindArtistResult</h3>
 <p class="error">No doc</p>
 <table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
 <tr><td>query</td><td><code>string</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>found</td><td><code>bool</code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>id</td><td><code><a href="amie_api.html#Typedef_artistId">artistId</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>id</td><td><code><a href="#Typedef_artistId">artistId</a></code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>name</td><td><code>string</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>url</td><td><code>string</code></td><td>yes</td><td></td><td></td></tr>
 </table><br/></div><div class="definition"><h3 id="Struct_SearchFindSongResult">Struct: SearchFindSongResult</h3>
@@ -1146,16 +1146,16 @@ artist and album information over the wire as well.
 <table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
 <tr><td>query</td><td><code>string</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>found</td><td><code>bool</code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>id</td><td><code><a href="amie_api.html#Typedef_songId">songId</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>id</td><td><code><a href="#Typedef_songId">songId</a></code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>title</td><td><code>string</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>url</td><td><code>string</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>artistNameQuery</td><td><code>string</code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>artistId</td><td><code><a href="amie_api.html#Typedef_artistId">artistId</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>artistId</td><td><code><a href="#Typedef_artistId">artistId</a></code></td><td>yes</td><td></td><td></td></tr>
 </table><br/></div><div class="definition"><h3 id="Struct_SearchFindResults">Struct: SearchFindResults</h3>
 <p class="error">No doc</p>
 <table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
-<tr><td>artists</td><td><code>list&lt;<code><a href="amie_api.html#Struct_SearchFindArtistResult">SearchFindArtistResult</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>songs</td><td><code>list&lt;<code><a href="amie_api.html#Struct_SearchFindSongResult">SearchFindSongResult</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>artists</td><td><code>list&lt;<code><a href="#Struct_SearchFindArtistResult">SearchFindArtistResult</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>songs</td><td><code>list&lt;<code><a href="#Struct_SearchFindSongResult">SearchFindSongResult</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
 </table><br/></div><div class="definition"><h3 id="Struct_EditorNote">Struct: EditorNote</h3>
 <p class="doc">Editorial content associated with an album.  Currently, an album can only have
 a single editorial note.
@@ -1176,7 +1176,7 @@ a single editorial note.
 <p class="error">No doc</p>
 <table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
 <tr><td>timestamp</td><td><code>string</code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>song</td><td><code><a href="amie_api.html#Struct_SongVO">SongVO</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>song</td><td><code><a href="#Struct_SongVO">SongVO</a></code></td><td>yes</td><td></td><td></td></tr>
 </table><br/></div><div class="definition"><h3 id="Struct_ShrekAutoCompleteArtist">Struct: ShrekAutoCompleteArtist</h3>
 <p class="doc">@todo (lucas) rename p_id to id
 </p><table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
@@ -1186,16 +1186,16 @@ a single editorial note.
 <p class="error">No doc</p>
 <table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
 <tr><td>inverse</td><td><code>bool</code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>sourceArtist</td><td><code><a href="amie_api.html#Struct_ShrekAutoCompleteArtist">ShrekAutoCompleteArtist</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>sourceArtist</td><td><code><a href="#Struct_ShrekAutoCompleteArtist">ShrekAutoCompleteArtist</a></code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>type</td><td><code>string</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>type_desc</td><td><code>string</code></td><td>yes</td><td></td><td></td></tr>
 <tr><td>weight</td><td><code>i32</code></td><td>yes</td><td></td><td></td></tr>
 </table><br/></div><div class="definition"><h3 id="Struct_ShrekResult">Struct: ShrekResult</h3>
 <p class="error">No doc</p>
 <table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
-<tr><td>sourceArtist</td><td><code><a href="amie_api.html#Struct_ShrekAutoCompleteArtist">ShrekAutoCompleteArtist</a></code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>artist</td><td><code><a href="amie_api.html#Struct_ArtistVO">ArtistVO</a></code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>relationships</td><td><code>list&lt;<code><a href="amie_api.html#Struct_ShrekRelationship">ShrekRelationship</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>sourceArtist</td><td><code><a href="#Struct_ShrekAutoCompleteArtist">ShrekAutoCompleteArtist</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>artist</td><td><code><a href="#Struct_ArtistVO">ArtistVO</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>relationships</td><td><code>list&lt;<code><a href="#Struct_ShrekRelationship">ShrekRelationship</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
 </table><br/></div><div class="definition"><h3 id="Struct_RecommendationsSeedArtistVO">Struct: RecommendationsSeedArtistVO</h3>
 <p class="error">No doc</p>
 <table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
@@ -1207,8 +1207,8 @@ a single editorial note.
 </table><br/></div><div class="definition"><h3 id="Struct_RecommendationVO">Struct: RecommendationVO</h3>
 <p class="error">No doc</p>
 <table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
-<tr><td>album</td><td><code><a href="amie_api.html#Struct_AlbumVO">AlbumVO</a></code></td><td>yes</td><td></td><td></td></tr>
-<tr><td>reasons</td><td><code>list&lt;<code><a href="amie_api.html#Struct_RecommendationsSeedArtistVO">RecommendationsSeedArtistVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>album</td><td><code><a href="#Struct_AlbumVO">AlbumVO</a></code></td><td>yes</td><td></td><td></td></tr>
+<tr><td>reasons</td><td><code>list&lt;<code><a href="#Struct_RecommendationsSeedArtistVO">RecommendationsSeedArtistVO</a></code>&gt;</code></td><td>yes</td><td></td><td></td></tr>
 </table><br/></div><div class="definition"><h3 id="Struct_PandoraSongSeedVO">Struct: PandoraSongSeedVO</h3>
 <p class="error">No doc</p>
 <table><tr><th>Field</th><th>Type</th><th>Required</th><th>Default value</th><th>Notes</th></tr>
@@ -1229,9 +1229,9 @@ a single editorial note.
 </td></tr>
 <tr><td>listenerLink</td><td><code>string</code></td><td>yes</td><td></td><td>Link to view listeners for the station
 </td></tr>
-<tr><td>songSeeds</td><td><code>list&lt;<code><a href="amie_api.html#Struct_PandoraSongSeedVO">PandoraSongSeedVO</a></code>&gt;</code></td><td>yes</td><td></td><td>Songs the user has added to the station for variety
+<tr><td>songSeeds</td><td><code>list&lt;<code><a href="#Struct_PandoraSongSeedVO">PandoraSongSeedVO</a></code>&gt;</code></td><td>yes</td><td></td><td>Songs the user has added to the station for variety
 </td></tr>
-<tr><td>artistSeeds</td><td><code>list&lt;<code><a href="amie_api.html#Struct_PandoraArtistSeedVO">PandoraArtistSeedVO</a></code>&gt;</code></td><td>yes</td><td></td><td>Artists the user has added to the station for variety
+<tr><td>artistSeeds</td><td><code>list&lt;<code><a href="#Struct_PandoraArtistSeedVO">PandoraArtistSeedVO</a></code>&gt;</code></td><td>yes</td><td></td><td>Artists the user has added to the station for variety
 </td></tr>
 </table><br/></div><div class="definition"><h3 id="Struct_PandoraBookmarkedSongVO">Struct: PandoraBookmarkedSongVO</h3>
 <p class="error">No doc</p>
@@ -1305,7 +1305,7 @@ to the real guts.
 </td></tr>
 <tr><td>newsletter_id</td><td><code>string</code></td><td>yes</td><td></td><td>The id of the newsletter it was included in.
 </td></tr>
-<tr><td>album</td><td><code><a href="amie_api.html#Struct_AlbumVO">AlbumVO</a></code></td><td>yes</td><td></td><td>The album this item references.
+<tr><td>album</td><td><code><a href="#Struct_AlbumVO">AlbumVO</a></code></td><td>yes</td><td></td><td>The album this item references.
 </td></tr>
 <tr><td>title</td><td><code>string</code></td><td>yes</td><td></td><td>The call-out provided by editorial.
 </td></tr>

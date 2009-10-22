@@ -17,7 +17,10 @@ mkdir py
 
 #compc -source-path . -include-sources as3/src/com/amiestreet/api/ -output amie-api.swc
 
-python ~/maxwell-vm/prod_web/gen_scripts/generate_api_clients.py -u http://amiestreet.com/api/v0.1/ -c amiestreet -d ~/maxwell-vm/amiestreet-api/ -o amie-api -i ~/maxwell-vm/prod_web/rpc/amie_api.thrift
+
+~/maxwell-vm/thrift/thrift/compiler/cpp/thrift -o /home/lucas/maxwell-vm/amiestreet-api/ --gen jquery:js_class_name=amiestreet,client_filename=amie-api.js,api_endpoint_url=http://amiestreet.com/api/v0.1/ /home/lucas/maxwell-vm/prod_web/rpc/amie_api.thrift
+
+~/maxwell-vm/thrift/thrift/compiler/cpp/thrift -o /home/lucas/maxwell-vm/amiestreet-api/ --gen rest_py:py_class_name=amiestreet,client_filename=amie-api.py,api_endpoint_url=http://amiestreet.com/api/v0.1/ /home/lucas/maxwell-vm/prod_web/rpc/amie_api.thrift
 
 chmod 0755 amie-api.js
 chmod 0755 amie-api.py
